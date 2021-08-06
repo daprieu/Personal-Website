@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Alex Prieu</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="description" content="Personal webisite for Alex Prieu">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
+  color: black;
   line-height: 1.8;
+  font-display: swap;
 }
 
 /* Create a Parallax Effect */
@@ -24,19 +26,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('images/tanner-boriack-GmoaEH48m8c-unsplash.jpg');
+  background-image: url('images/nash.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("images/IMG_20200415_124725.jpg");
+  background-image: url("images/prada.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("images/IMG_20190804_170546.jpg");
+  background-image: url("images/waterloo.jpg");
   min-height: 400px;
 }
 
@@ -57,6 +59,10 @@ body, html {
     background-attachment: scroll;
     min-height: 400px;
   }
+}
+.links{
+  padding: 24px;
+  
 }
 </style>
 <body>
@@ -119,7 +125,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>Alex Prieu</b></p><br>
-      <img src="images/IMG_20190719_190157.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img rel="preload" as="image" src="images/meandabeer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -161,36 +167,37 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="images/tech/react.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="React">
+    
+      <img src="images/tech/React-icon.svg" style="width:50%" alt="React">
     </div>
 
     <div class="w3-col m3">
-      <img src="images/tech/javascript.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="JavaScript">
+      <img src="images/tech/Unofficial_JavaScript_logo_2.svg" style="width:50%" alt="JavaScript">
     </div>
 
     <div class="w3-col m3">
-      <img src="images/tech/html5.svg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="HTML">
+      <img src="images/tech/html5.svg" style="width:50%" alt="HTML">
     </div>
 
     <div class="w3-col m3">
-      <img src="images/tech/css.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="CSS">
+      <img src="images/tech/CSS3_logo_and_wordmark.svg" style="width:50%" alt="CSS">
     </div>
   </div>
   <div class="w3-row-padding w3-center w3-margin-top">
     <div class="w3-col m3">
-      <img src="images/tech/bootstrap.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bootstrap">
+      <img src="images/tech/Bootstrap_logo.svg" style="width:50%" alt="Bootstrap">
     </div>
 
     <div class="w3-col m3">
-      <img src="images/tech/django.svg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Django">
+      <img src="images/tech/django.svg" style="width:50%" alt="Django">
     </div>
 
     <div class="w3-col m3">
-      <img src="images/tech/python.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Python">
+      <img src="images/tech/Python-logo-notext.svg" style="width:50%" alt="Python">
     </div>
 
     <div class="w3-col m3">
-      <img src="images/tech/SQLite.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="SQLite">
+      <img src="images/tech/Sqlite-square-icon.svg" style="width:50%" alt="SQLite">
     </div>
   </div>
 </div>
@@ -326,16 +333,13 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
-    <a href="https://www.instagram.com/bug.catcher.alex/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-    <a href="https://twitter.com/BugAlex"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/daniel-alex-prieu/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/daprieu" ><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a class="links" aria-label="Link to my instagram" href="https://www.instagram.com/bug.catcher.alex/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a class="links" aria-label="Link to my twitter" href="https://twitter.com/BugAlex"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a class="links" aria-label="Link to my linkedin" href="https://www.linkedin.com/in/daniel-alex-prieu/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a class="links" aria-label="Link to my github" href="https://github.com/daprieu" ><i class="fa fa-github w3-hover-opacity"></i></a>
   </div>
   <div>© 2021 Alex Prieu.</div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" rel="noopener" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <script>
